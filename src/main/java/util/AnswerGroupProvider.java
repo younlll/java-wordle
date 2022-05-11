@@ -20,7 +20,7 @@ public class AnswerGroupProvider {
         List<Characters> answerGroup;
 
         URL resource = AnswerGroupProvider.class.getClassLoader().getResource(FILE_NAME);
-        if(resource == null){
+        if (resource == null) {
             throw new InvalidPathReferenceException("잘못된 경로 입니다.");
         }
         try (Stream<String> lines = Files.lines(Paths.get(resource.toURI()))) {

@@ -36,7 +36,7 @@ public class Characters {
 
     private void validate(String value) {
         if (value.length() != WORD_LENGTH) {
-            throw new IllegalArgumentException(String.format(OUT_OF_WORD_LENGTH_ERR_MSG,value.length()));
+            throw new IllegalArgumentException(String.format(OUT_OF_WORD_LENGTH_ERR_MSG, value.length()));
         }
     }
 
