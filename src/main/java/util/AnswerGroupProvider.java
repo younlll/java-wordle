@@ -14,7 +14,7 @@ import model.Characters;
 
 public class AnswerGroupProvider {
 
-    private static final String FILE_NAME = "words.txt";
+    private static final String FILE_NAME = "word.txt";
 
     public static List<Characters> provide() {
         List<Characters> answerGroup;
@@ -28,7 +28,7 @@ public class AnswerGroupProvider {
                     .map(Characters::new)
                     .collect(Collectors.toList());
         } catch (IOException | URISyntaxException e) {
-            throw new AnswerGroupNotFoundException(resource.getPath() + "경로의 " + FILE_NAME + "을 찾지 못하였습니다.");
+            throw new AnswerGroupNotFoundException("I/O exception 또는 URI reference로 구문 분석을 할 수 없습니다.");
         }
 
         return answerGroup;
