@@ -14,7 +14,7 @@ import model.Characters;
 
 public class AnswerGroupProvider {
 
-    private static final String FILE_NAME = "word.txt";
+    private static final String FILE_NAME = "words.txt";
 
     public static List<Characters> provide() {
         List<Characters> answerGroup;
